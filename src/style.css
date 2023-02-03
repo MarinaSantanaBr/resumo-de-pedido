@@ -1,17 +1,53 @@
 #banner {
     width: 100%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    
 }
 
 h1 {
     text-align: center;
     font-size: 50px;
     margin-top: 50px;
+    font-family: Arial;
 }
 
 p {
     text-align: center;
+    
 }
 
 em {
-    color: blue;
+    color: rgb(138, 138, 174);
+}
+
+#botaopagamento {
+   border-radius: 15px;
+   border: none;
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+   width: 20%;
+   b
+   margin-top: 92px;
+   background: rgb(40, 152, 244);
+   color: aliceblue;
+}
+
+#botaocancelar {
+    border: none;
+    background: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 30%;
+    margin-top: 10px;
+    
+}
+
+#mudar {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 1%;    
 }
