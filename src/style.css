@@ -1,8 +1,22 @@
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+}
+
+body {
+    margin: 0px;
+}
+
+#banner-container {
+    width: 100%;
+    background: #ffc700;
+}
+
 #banner {
     width: 100%;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    
+    height: 400px;
+    object-fit: contain;
 }
 
 h1 {
@@ -14,40 +28,100 @@ h1 {
 
 p {
     text-align: center;
-    
+    font-size: 25px;
+    font-family: Arial;
+    font-weight: bold;
 }
 
 em {
-    color: rgb(138, 138, 174);
+    color: rgb(171, 171, 184);
+    font-size: 30px;
+}
+
+button {
+    border-radius: 15px;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 400px;
+    margin-top: 16px;
+    padding: 20px 50px;
 }
 
 #botaopagamento {
-   border-radius: 15px;
-   border: none;
-   margin-left: auto;
-   margin-right: auto;
-   display: block;
-   width: 20%;
-   b
-   margin-top: 92px;
-   background: rgb(40, 152, 244);
-   color: aliceblue;
+    background: rgb(40, 152, 244);
+    color: aliceblue;
 }
 
 #botaocancelar {
-    border: none;
-    background: none;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 30%;
-    margin-top: 10px;
-    
+    background: white;
+    color: black;
 }
 
-#mudar {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 1%;    
+#plano-anual {
+    background-color: rgba(114, 130, 143, 0.413);
+    height: 100px;
+    width: 100px;
 }
+
+#lista-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+}
+
+#item-container {
+    background-color:rgb(248 249 254);
+    padding: 24px 24px;
+    height: 100px;
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 18px;
+
+}
+
+#item-icone-container {
+    background-color:rgb(223 229 251);
+    display: flex;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+#item-icone {
+    font-size: 24px;
+}
+
+#item-info-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 24px;
+    justify-content: center;
+    flex-grow: 1;
+
+}
+
+#item-info-nome {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#item-info-preco {
+    color: rgb(128, 122, 122);
+}
+
+#item-controle-container {
+    display: flex;
+    align-items: center;
+}
+
+#item-controle {
+    font-size: 18px;
+}
+

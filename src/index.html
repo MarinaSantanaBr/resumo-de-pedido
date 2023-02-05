@@ -1,26 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resumo do pedido</title>
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <img id="banner" src="banner.jpg"
-    <header>
-        <h1>Resumo do pedido</h1>
-    </header>
-    <main>
-        <p><em>Você pode ouvir milhões de músicas, audiolivros e podcasts de qualquer dispositivo e em qualquer lugar que desejar!</em></p>
-    </main>
-    <footer>
-        <p>Plano anual R$59,99</p>
-        <a id=mudar href="https://www.youtube.com/">Mudar</a>
 
-        <button id="botaopagamento" type="button" onclick="alert('Pagamento realizado!')">Prossiga para o pagamento</button><br><br>
-        <button id="botaocancelar" type="button" onclick="alert('Pedido cancelado!')">Cancelar pedido</button><br><br>
+<body>
+    <header>
+        <div id="banner-container">
+            <img id="banner" src="banner.jpg">
+        </div>
+        <h1>Resumo do pedido</h1>
+        <p><em>Você pode ouvir milhões de músicas, audiolivros e podcasts de qualquer dispositivo e em qualquer lugar
+                que desejar!</em></p>
+    </header>
+
+    <main>
+        <div id="lista-container">
+            <div id="item-container">
+                <div id="item-icone-container">
+                    <i id="item-icone" class="fas fa-music"></i>
+                </div>
+                <div id="item-info-container">
+                    <span id="item-info-nome" >Plano anual</span>
+                    <span id="item-info-preco">R$59,99</span>
+                </div>
+                <div id="item-controle-container">
+                    <a id="item-controle" href="#">Mudar</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <button id="botaopagamento" type="button" onclick="alert('Pagamento realizado!')">Prossiga para o
+            pagamento</button>
+        <button id="botaocancelar" type="button" onclick="alert('Pedido cancelado!')">Cancelar pedido</button>
     </footer>
 </body>
+
 </html>
